@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600");
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #303030;
+  background: url(../img/bg-main.jpg); }
+
+* {
+  outline: none; }
+
+.ba-header {
+  max-width: 1065px;
+  text-align: center;
+  margin: auto;
+  padding-top: 60px; }
+  .ba-header .ba-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin: 0; }
+  .ba-header .ba-main-title {
+    font-size: 86px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 15px 0 70px;
+    position: relative;
+    display: inline-block; }
+    .ba-header .ba-main-title:before, .ba-header .ba-main-title:after {
+      content: '';
+      display: block;
+      position: absolute; }
+    .ba-header .ba-main-title:before {
+      width: 52px;
+      height: 50px;
+      background: url(../img/bg-trian.svg) no-repeat;
+      top: 145px;
+      left: -90px; }
+    .ba-header .ba-main-title:after {
+      width: 30px;
+      height: 30px;
+      background: url(../img/bg-plus.svg) no-repeat;
+      top: -60px;
+      right: 150px; }
+
+.ba-slider {
+  font-size: 0;
+  position: relative;
+  margin-left: 137px;
+  margin-bottom: 128px; }
+
+.ba-slider__img {
+  margin-left: 45px;
+  position: relative; }
+  .ba-slider__img img {
+    overflow: hidden; }
+  .ba-slider__img__hovered {
+    background-color: #32eaad;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    opacity: 0;
+    z-index: 10;
+    padding: 30px; }
+    .ba-slider__img__hovered h3 {
+      font-size: 28px;
+      letter-spacing: .2em;
+      margin: 0; }
+    .ba-slider__img__hovered p {
+      font-size: 12px;
+      letter-spacing: .2em;
+      margin: 0 0 10px; }
+    .ba-slider__img__hovered:hover {
+      opacity: .8; }
+
+.slick-prev:before, .slick-next:before {
+  content: '';
+  display: block;
+  height: 97px;
+  width: 97px;
+  position: absolute;
+  z-index: 10; }
+
+.slick-prev.slick-arrow:before {
+  background: url(../img/arr-left.png) no-repeat;
+  left: -80px; }
+
+.slick-prev.slick-arrow {
+  top: calc(50% - 45px); }
+
+.slick-next.slick-arrow {
+  right: 100px;
+  top: calc(50% - 45px); }
+
+.slick-next.slick-arrow:before {
+  background: url(../img/arr-right.png) no-repeat; }
+
+.slick-slide:not(.slick-active) {
+  opacity: .3; }
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px; }
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
